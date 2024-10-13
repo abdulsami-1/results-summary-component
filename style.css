@@ -1,0 +1,252 @@
+@import url("./asset/s/fonts/HankenGrotesk-VariableFont_wght.ttf");
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./asset/s/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+body {
+  box-sizing: border-box;
+}
+.card {
+  height: 480px;
+  width: 650px;
+  display: flex;
+  flex-direction: C;
+  margin: 100px auto;
+  background-color: #fff;
+  box-shadow: rgba(5, 5, 5, 0.2) 0px 7px 29px 0px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+div #result {
+  height: 480px;
+  width: 340px;
+  border-radius: 1rem;
+  background-color: #503af5;
+  color: #fff;
+}
+div #summary {
+  background-color: #fff;
+  height: 480px;
+  width: 340px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+h3 {
+  opacity: 0.7;
+}
+h3 + #rate {
+  height: 10rem;
+  width: 10.5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 5px 10px 200px rgba(0, 0, 0, 0.1);
+}
+#rate strong {
+  font-size: 4rem;
+}
+#rate p {
+  opacity: 0.7;
+}
+.card #result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#result h3 {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.7;
+}
+h2 + p {
+  height: 3.6rem;
+  width: 13rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  opacity: 0.7;
+}
+#summary h2 {
+  background-color: #fff;
+  padding-left: 2rem;
+  margin-top: 2.9rem;
+}
+
+div .btn {
+  height: 16rem;
+  width: 80%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  margin: 0rem auto;
+  margin-top: 1rem;
+}
+.btn button {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.6rem;
+}
+span img {
+  height: 1rem;
+  width: 1.3rem;
+  margin-right: 1rem;
+}
+button span:first-child {
+  margin-left: 1rem;
+}
+button span:last-child {
+  margin-right: 1rem;
+}
+.btn-cont {
+  height: 3rem;
+  width: 80%;
+  margin: 0rem auto;
+  margin-top: 2rem;
+}
+.btn-cont button {
+  color: #fff;
+  background-color: #303b59;
+  height: 3rem;
+  width: 100%;
+  border-radius: 5rem;
+  font-size: 1rem;
+}
+#btn-s-1 {
+  background-color: rgba(200, 2, 183, 0.1);
+  opacity: 0.7;
+  border: none;
+}
+
+#btn-s-2 {
+  background-color: rgba(237, 254, 1, 0.327);
+  opacity: 0.7;
+  border: none;
+}
+#btn-s-3 {
+  background-color: rgba(34, 232, 12, 0.327);
+  opacity: 0.7;
+  border: none;
+}
+#btn-s-4 {
+  background-color: rgba(28, 86, 232, 0.281);
+  opacity: 0.7;
+  border: none;
+}
+
+#btn-s-1 span:first-child {
+  color: rgb(222, 57, 42);
+  font-size: 0.9rem;
+}
+#btn-s-2 span:first-child {
+  color: rgb(231, 205, 12);
+  font-size: 0.9rem;
+}
+#btn-s-3 span:first-child {
+  color: rgb(20, 206, 141);
+  font-size: 0.9rem;
+}
+#btn-s-4 span:first-child {
+  color: rgb(35, 8, 171);
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  div #result,
+  div #summary {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  div #result {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  div #summary {
+    padding-bottom: 2rem;
+  }
+
+  h3 + #rate {
+    margin-bottom: 1rem;
+  }
+
+  #result h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 + p {
+    margin-bottom: 1rem;
+  }
+
+  #summary h2 {
+    margin-top: 1.5rem;
+  }
+
+  div .btn {
+    width: 90%;
+  }
+
+  .btn-cont {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h3 + #rate {
+    height: 8rem;
+    width: 8.5rem;
+  }
+
+  #rate strong {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h2 + p {
+    width: 80%;
+  }
+
+  .btn button {
+    font-size: 0.9rem;
+  }
+}
